@@ -16,13 +16,13 @@ gem "sqlite3", "1.7.3"
 gem "concurrent-ruby", "1.3.5"
 
 group :development, :test do
-  gem 'reline', '0.6.2'
-  gem "debug", "1.7.1", platforms: %i[ mri mingw x64_mingw ]
+  gem 'reline', '~> 0.5'
+  gem "debug", "~> 1.7", platforms: %i[ mri mingw x64_mingw ]
 end
 
 group :development do
   gem "web-console", "4.2.1"
-  gem "solargraph"
+  gem "solargraph", "~> 0.53"
   gem "irb", "1.15.2"
   gem "repl_type_completor"
 end
